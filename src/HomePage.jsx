@@ -3,7 +3,6 @@ import Header from "./Header";
 import Projects from "./Components/Projects";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
-import Projectsexpanded from "./Projects-expanded";
 
 const HomePage = () => {
   return (
