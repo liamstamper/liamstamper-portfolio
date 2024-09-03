@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -43,7 +43,10 @@ const Hero = () => {
         </a>
         <Link
           class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-          to="projects/gr-stocks"
+          to={{
+            pathname: "/projects/gr-stocks",
+            state: { fromRecentProjects: true },
+          }}
         >
           🗂️ Recent Work
         </Link>
