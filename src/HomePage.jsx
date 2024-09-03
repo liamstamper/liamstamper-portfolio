@@ -1,0 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./Header";
+import BackgroundAnimation from "./components/Background";
+import Projects from "./Components/Projects";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Projectsexpanded from "./Projects-expanded";
+
+const HomePage = () => {
+ 
+  return (
+    <div className="relative min-h-screen bg-black overflow-hidden">
+      <Header />
+      <Hero />
+      <About />
+      <Projects />
+    </div>
+  );
+};
+
+export default HomePage;
