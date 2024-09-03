@@ -37,7 +37,7 @@ const Projects = () => {
           </div>
           <div className="relative group h-[424px]">
             <img
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full opacity-40 object-cover rounded-lg"
               src={VideoToAsciiThumbnail}
               alt="VideoToAscii Image"
             />
