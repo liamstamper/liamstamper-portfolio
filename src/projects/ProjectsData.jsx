@@ -2,6 +2,10 @@ import GRImage1 from "../assets/gr-stocks/gr-stocks-home.png";
 import GRImage2 from "../assets/gr-stocks/gr-stocks-login.png";
 import GRImage3 from "../assets/gr-stocks/gr-stocks-side.png";
 
+import DoomImage1 from "../assets/doom-in-ascii/gameplay.png";
+import DoomImage2 from "../assets/doom-in-ascii/menu.png";
+import DoomImage3 from "../assets/doom-in-ascii/map.png";
+
 export const projectsData = [
   {
     id: "gr-stocks",
@@ -11,6 +15,7 @@ export const projectsData = [
     tags: ["React", "Google Finance", "API"],
     date: "September 2024",
     images: [GRImage1, GRImage2, GRImage3],
+    captions: ["A look at the Home Page", "Login Page for the Application"],
     overview:
       "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
     sections: [
@@ -53,6 +58,7 @@ export const projectsData = [
     tags: ["React", "Google Finance", "API"],
     date: "September 2024",
     images: [GRImage1, GRImage2, GRImage3],
+    captions: ["A look at the Home Page", "Login Page for the Application"],
     overview:
       "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
     sections: [
@@ -90,13 +96,13 @@ export const projectsData = [
   {
     id: "doom-in-ascii",
     title: "Doom in Ascii",
-    link: "https://gr-stocks.vercel.app/",
-    repo: "https://github.com/liamstamper/gr-stocks",
-    tags: ["React", "Google Finance", "API"],
+    repo: "https://github.com/liamstamper/ascii-doom",
+    tags: ["Python", "Game Development", "Ray-Casting"],
     date: "September 2024",
-    images: [GRImage1, GRImage2, GRImage3],
+    images: [DoomImage1, DoomImage2, DoomImage3],
+    captions: ["Here is some gameplay", "The game menu and map representation"],
     overview:
-      "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
+      "Doom in Ascii is a small gave developement project based on the techniques of the classic game Doom. This project explores ray-casting ",
     sections: [
       {
         title: "Features",
@@ -134,11 +140,12 @@ export const projectsData = [
     title: "Nasa Apod Desktop",
     link: "https://gr-stocks.vercel.app/",
     repo: "https://github.com/liamstamper/gr-stocks",
-    tags: ["React", "Google Finance", "API"],
+    tags: ["Python", "API", "Automation"],
     date: "September 2024",
     images: [GRImage1, GRImage2, GRImage3],
+    captions: ["Here is some gameplay", "The game menu and map representation"],
     overview:
-      "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
+      "Nasa Apod Desktop is a Python script to fetch the latest NASA astronomy picture of the day (APOD) and set it as your mac backround. In the readme I included instructions for scheduling the script to run daily with cron.",
     sections: [
       {
         title: "Features",
@@ -176,9 +183,10 @@ export const projectsData = [
     title: "Vector Space Speech Analysis",
     link: "https://gr-stocks.vercel.app/",
     repo: "https://github.com/liamstamper/gr-stocks",
-    tags: ["React", "Google Finance", "API"],
+    tags: ["Python", "Vector Space"],
     date: "September 2024",
     images: [GRImage1, GRImage2, GRImage3],
+    captions: ["Here is some gameplay", "The game menu and map representation"],
     overview:
       "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
     sections: [
@@ -218,11 +226,12 @@ export const projectsData = [
     title: "Open Prarie Magazine",
     link: "https://gr-stocks.vercel.app/",
     repo: "https://github.com/liamstamper/gr-stocks",
-    tags: ["React", "Google Finance", "API"],
+    tags: ["React", "Tailwind"],
     date: "September 2024",
     images: [GRImage1, GRImage2, GRImage3],
+    captions: ["Here is some gameplay", "The game menu and map representation"],
     overview:
-      "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
+      "Open Prairie Magazine is a a litterary magazine built in React. It is styled with Tailwind and data ",
     sections: [
       {
         title: "Features",
