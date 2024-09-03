@@ -1,4 +1,5 @@
-import GrStocksThumbnail from "../assets/gr-stocks-sidebar.png";
+import { Link } from "react-router-dom";
+import GrStocksThumbnail from "../assets/gr-stocks/gr-stocks-sidebar.png";
 import VideoToAsciiThumbnail from "../assets/videotoascii.png";
 import OpenPrairieThumbnail from "../assets/openprairie.png";
 import APODThumbnail from "../assets/nasaapod.png";
@@ -25,12 +26,12 @@ const Projects = () => {
                 </p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a
-                  href="#"
+                <Link
+                  to="projects/gr-stocks"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -46,12 +47,12 @@ const Projects = () => {
                 <p className="text-sm">Webcam to ASCII built in C++</p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a
-                  href="#"
+                <Link
+                  to="/projects/video-to-ascii"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -70,12 +71,12 @@ const Projects = () => {
                 <p className="text-sm">Brief description of the project.</p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a
-                  href="#"
+                <Link
+                  to="/projects/doom-in-ascii"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -94,12 +95,12 @@ const Projects = () => {
                 </p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a
-                  href="#"
+                <Link
+                  to="/projects/vectors-space-speeches"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -118,12 +119,12 @@ const Projects = () => {
                 <p className="text-sm">Brief description of the project.</p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a
-                  href="#"
+                <Link
+                  to="/projects/open-prairie-magazine"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -142,12 +143,12 @@ const Projects = () => {
                 </p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a
-                  href="#"
+                <Link
+                  to="/projects/nasa-apod-desktop"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>
