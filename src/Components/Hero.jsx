@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Resume from "../assets/William-Stamper.pdf";
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
       <div class="mt-8 gap-3 flex justify-center">
         <a
           class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-          href="#"
+          href={Resume}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           My Resume
           <svg
