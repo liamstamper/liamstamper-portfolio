@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -13,8 +14,8 @@ const Hero = () => {
       <div class="mt-5 max-w-3xl">
         <p class="text-lg text-gray-600 dark:text-neutral-400">
           Computer Science student at The University of Iowa. 2024 Undergraduate
-          Researcher. JavaScript Developer in 2023 and Web Development Intern
-          during Summer 2022.
+          Research Assistant. JavaScript Developer in 2023 and Web Development
+          Intern during Summer 2022.
         </p>
       </div>
       <div class="mt-8 gap-3 flex justify-center">
@@ -40,12 +41,12 @@ const Hero = () => {
             <path d="m9 18 6-6-6-6" />
           </svg>
         </a>
-        <a
+        <Link
           class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-          href="#"
+          to="projects/gr-stocks"
         >
           🗂️ Recent Work
-        </a>
+        </Link>
       </div>
 
       <div className="flex space-x-4 border-[.2px] border-gray-600 p-3 mt-7 rounded-xl">
