@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import GrStocksThumbnail from "../assets/gr-stocks/gr-stocks-sidebar.png";
-import VideoToAsciiThumbnail from "../assets/videotoascii.png";
-import OpenPrairieThumbnail from "../assets/openprairie.png";
-import APODThumbnail from "../assets/nasaapod.png";
-import VectorSpaceThumbnail from "../assets/vectorspace.png";
-import DoomAsciiThumbnail from "../assets/doomascii.png";
+import GrStocksThumbnail from "../assets/thumbnails/gr-stocks.png";
+import VideoToAsciiThumbnail from "../assets/thumbnails/videotoascii.png";
+import OpenPrairieThumbnail from "../assets/thumbnails/openprairie.png";
+import APODThumbnail from "../assets/thumbnails/nasaapod.png";
+import VectorSpaceThumbnail from "../assets/thumbnails/vectorspace.png";
+import DoomAsciiThumbnail from "../assets/thumbnails/doomascii.png";
 
 const Projects = () => {
   return (
     <div id="projects" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold text-white mb-8">Selected Projects</h1>
+      <h1 className="text-4xl font-bold text-white mb-8">My Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="space-y-4">
           <div className="relative group h-[325px]">
@@ -35,7 +35,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="relative group h-[524px]">
+          <div className="relative group h-[424px]">
             <img
               className="w-full h-full object-cover rounded-lg"
               src={VideoToAsciiThumbnail}
@@ -59,7 +59,7 @@ const Projects = () => {
         </div>
 
         <div className="space-y-4">
-          <div className="relative group h-[490px]">
+          <div className="relative group h-[410px]">
             <img
               className="w-full h-full object-cover rounded-lg"
               src={DoomAsciiThumbnail}
@@ -80,7 +80,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="relative group h-[358px]">
+          <div className="relative group h-[338px]">
             <img
               className="w-full h-full object-cover rounded-lg"
               src={VectorSpaceThumbnail}
@@ -128,7 +128,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="relative group h-[563px]">
+          <div className="relative group h-[463px]">
             <img
               className="w-full h-full object-cover rounded-lg"
               src={APODThumbnail}
