@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { useParams } from "react-router-dom";
 import { projectsData } from "./projects/ProjectsData";
 
 const ProjectsExpanded = () => {
   const { id } = useParams();
+  const location = useLocation();
   const project = projectsData.find((project) => project.id === id);
 
   useEffect(() => {
@@ -22,26 +22,49 @@ const ProjectsExpanded = () => {
         <div className="w-full lg:mx-auto lg:w-3/4">
           <div className="py-8 lg:px-8">
             <div className="space-y-5 lg:space-y-8">
-              <HashLink
-                className="inline-flex items-center gap-x-1.5 text-sm hover:underline focus:outline-none focus:underline text-blue-500"
-                to="/#projects"
-              >
-                <svg
-                  className="shrink-0 size-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+              {location.state?.fromRecentProjects ? (
+                <HashLink
+                  className="inline-flex items-center gap-x-1.5 text-sm hover:underline focus:outline-none focus:underline text-blue-500"
+                  to="/#"
                 >
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
-                Back to Projects
-              </HashLink>
+                  <svg
+                    className="shrink-0 size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  Back
+                </HashLink>
+              ) : (
+                <HashLink
+                  className="inline-flex items-center gap-x-1.5 text-sm hover:underline focus:outline-none focus:underline text-blue-500"
+                  to="/#projects"
+                >
+                  <svg
+                    className="shrink-0 size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  Back to Projects
+                </HashLink>
+              )}
 
               <h2 className="text-3xl font-bold lg:text-5xl text-white">
                 {project.title}
@@ -94,7 +117,7 @@ const ProjectsExpanded = () => {
                     alt="Project screenshot"
                   />
                   <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                    A look at the Home Page
+                    {project.captions[0]}
                   </figcaption>
                 </figure>
               )}
@@ -110,43 +133,31 @@ const ProjectsExpanded = () => {
               <ul className="list-disc list-outside space-y-5 ps-5 text-lg text-neutral-200">
                 {project.bullets.map((bullet, index) => (
                   <li key={index} className="ps-2">
-                    {bullet.quote}{" "}
-                    <a
-                      className="decoration-2 hover:underline focus:outline-none focus:underline font-medium text-blue-500"
-                      href="#"
-                    >
-                      {bullet.author}
-                    </a>
+                    {bullet.quote}
                   </li>
                 ))}
               </ul>
-
-              <div className="grid lg:grid-cols-2 gap-3">
-                {project.images.length > 1 && (
-                  <figure>
+              <figure>
+                <div className="grid lg:grid-cols-2 gap-3">
+                  {project.images.length > 1 && (
                     <img
                       src={project.images[1]}
                       className="w-full h-96 bg-gray-300 rounded-xl object-cover"
                       alt="Project screenshot"
                     />
-                    <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                      Login Page for the Application
-                    </figcaption>
-                  </figure>
-                )}
-                {project.images.length > 2 && (
-                  <figure>
+                  )}
+                  {project.images.length > 2 && (
                     <img
                       src={project.images[2]}
                       className="w-full h-96 bg-gray-300 rounded-xl object-cover"
                       alt="Project screenshot"
                     />
-                    <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                      A look at the Sidebar
-                    </figcaption>
-                  </figure>
-                )}
-              </div>
+                  )}
+                </div>
+                <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                  {project.captions[1]}
+                </figcaption>
+              </figure>
 
               {project.sections.length > 2 && (
                 <div className="space-y-3">
