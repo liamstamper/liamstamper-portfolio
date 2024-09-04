@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./assets/logo.png";
 
 const Header = () => {
@@ -7,6 +7,19 @@ const Header = () => {
     { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
   ];
+
+  const handleScroll = () => {
+    if (window.scrollY === 0) {
+      setActiveButton("About");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header id="about">
