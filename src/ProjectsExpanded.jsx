@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { projectsData } from "./projects/ProjectsData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectsExpanded = () => {
   const { id } = useParams();
@@ -65,45 +68,62 @@ const ProjectsExpanded = () => {
                   Back to Projects
                 </HashLink>
               )}
-
-              <h2 className="text-3xl font-bold lg:text-5xl text-white">
-                {project.title}
+              <h2 className="flex justify-between items-center text-white">
+                <div className="font-bold text-3xl lg:text-5xl">
+                  {project.title}
+                </div>
+                <div className="flex gap-3">
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                    >
+                      Visit Site
+                      <svg
+                        class="shrink-0 size-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" />
+                      </svg>
+                    </a>
+                  )}
+                  {project.repo && (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                    >
+                      View Repo
+                    </a>
+                  )}
+                </div>
               </h2>
-              <div className="flex flex-row text-md font-bold lg:text-lg text-white gap-x-4 ">
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    {project.link}
-                  </a>
-                )}
-                {project.repo && (
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Repo: {project.repo}
-                  </a>
-                )}
-              </div>
 
-              <div className="flex items-center gap-x-2 flex-wrap">
-                {project.tags.map((tag, index) => (
-                  <div
-                    key={index}
-                    className="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-700 text-white"
-                  >
-                    {tag}
-                  </div>
-                ))}
-                <p className="text-xs sm:text-sm text-neutral-200">
-                  {project.date}
-                </p>
+              <div className="flex flex-wrap gap-x-3 gap-y-3 items-center">
+                <div className="flex flex-wrap items-center gap-x-3">
+                  {project.tags.map((tag, index) => (
+                    <div
+                      key={index}
+                      className="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-700 text-white"
+                    >
+                      {tag}
+                    </div>
+                  ))}
+                  <p className="text-xs sm:text-sm text-neutral-200">
+                    {project.date}
+                  </p>
+                </div>
               </div>
 
               <h3 className="text-2xl font-semibold text-white">Overview</h3>
