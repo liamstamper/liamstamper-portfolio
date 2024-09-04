@@ -21,9 +21,7 @@ const Projects = () => {
             <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Gr Stocks</h2>
-                <p className="text-sm">
-                  A Google Finance clone built in React.{" "}
-                </p>
+                <p className="text-sm">A Google Finance clone in React. </p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Link
@@ -68,7 +66,7 @@ const Projects = () => {
             <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Doom In Ascii</h2>
-                <p className="text-sm">Brief description of the project.</p>
+                <p className="text-sm">Doom build using ASCII in Python.</p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Link
@@ -90,8 +88,8 @@ const Projects = () => {
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Vectors Space Speeches</h2>
                 <p className="text-sm">
-                  Presidential speech similarity analysis with a vector space
-                  model built in Python
+                  Presidential speech similarity analysis with vector space in
+                  Python
                 </p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -116,7 +114,7 @@ const Projects = () => {
             <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Open Prairie Magazine</h2>
-                <p className="text-sm">Brief description of the project.</p>
+                <p className="text-sm">React tailwind magazine build.</p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Link
