@@ -1,6 +1,6 @@
-import GRImage1 from "../assets/gr-stocks/gr-stocks-home.png";
-import GRImage2 from "../assets/gr-stocks/gr-stocks-login.png";
-import GRImage3 from "../assets/gr-stocks/gr-stocks-side.png";
+import GRImage1 from "../assets/gr-stocks/home.png";
+import GRImage2 from "../assets/gr-stocks/login.png";
+import GRImage3 from "../assets/gr-stocks/side.png";
 
 import DoomImage1 from "../assets/doom-in-ascii/gameplay.png";
 import DoomImage2 from "../assets/doom-in-ascii/menu.png";
@@ -24,41 +24,35 @@ export const projectsData = [
     title: "Gr Stocks",
     link: "https://gr-stocks.vercel.app/",
     repo: "https://github.com/liamstamper/gr-stocks",
-    tags: ["React", "Tailwind", "API"],
+    tags: ["React", "Tailwind", "API", "MongoDB"],
     date: "September 2024",
     images: [GRImage1, GRImage2, GRImage3],
     captions: ["A look at the Home Page", "Login Page for the Application"],
     overview:
-      "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
+      "Gr Stocks is a comprehensive Google Finance clone. The application closely mirrors the core functionality of Google Finance, offering a user-friendly interface to view track and compare stocks. ",
     sections: [
       {
         title: "Features",
         content:
-          "As we've grown, we've seen how Preline has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.",
+          "Leveraging the Alpha Vantage API, Gr Stocks offers real-time stock market data. Users can create customized watchlists and track their cutom investment portfolio. The site features a side bar with intuitive navigation. Users can also view individual stocks with customizable graphs. ",
       },
       {
         title: "Technologies",
         content:
           "This project is built using the React library. I used an API from Alpha Vantage to get real-time stock market data. I used Tailwind CSS to style the application and icons from Google Fonts.",
       },
-      {
-        title: "Achievements",
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      },
     ],
     bullets: [
       {
-        line: " allows us to collaborate in real time and is a really great way for leadership on the team to stay up-to-date with what everybody is working on.",
-        author: "Stewarand Design",
+        line: "User Authentication: For user auth the application uses Firebase with Google Auth for authenticity.",
       },
       {
-        line: "a new way of sharing. It's a persistent way for everyone to see and absorb each other's work.",
-        author: "David ScEventbrite",
+        line: "Database: The project uses a Firebase MongoDb database to store the users watchlist and portfolio`.",
+      },
+      {
+        line: "Styling: The project uses Tailwind CSS with icons and fonts from Google Fonts.",
       },
     ],
-    closingStatement:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: "video-to-ascii",
@@ -162,31 +156,9 @@ export const projectsData = [
       {
         title: "Features",
         content:
-          "This project uses efficent text preprocessing and normilization techniques. Then I used term frequency inverse document frequency (TF-IDF) to find the most important words in the dataset. Finally using cosine similarity I identified the closed match to tthe unkown speeches.",
-      },
-      {
-        title: "Technologies",
-        content:
-          "This project uses well structured Python classes and functions.",
-      },
-      {
-        title: "Achievements",
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "This project uses efficent text preprocessing and normilization techniques. Then I used term frequency inverse document frequency (TF-IDF) to find the most important words in the dataset and finally using cosine similarity I identified the closed match to the unkown speeches.",
       },
     ],
-    bullets: [
-      {
-        line: " allows us to collaborate in real time and is a really great way for leadership on the team to stay up-to-date with what everybody is working on.",
-        author: "Stewarand Design",
-      },
-      {
-        line: "a new way of sharing. It's a persistent way for everyone to see and absorb each other's work.",
-        author: "David ScEventbrite",
-      },
-    ],
-    closingStatement:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: "open-prairie-magazine",
