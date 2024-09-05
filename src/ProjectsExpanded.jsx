@@ -82,29 +82,50 @@ const ProjectsExpanded = () => {
                     >
                       Visit Site
                       <svg
-                        class="shrink-0 size-4"
+                        className="shrink-0 size-4"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       >
                         <path d="m9 18 6-6-6-6" />
                       </svg>
                     </a>
                   )}
+
                   {project.repo && (
                     <a
                       href={project.repo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                      className={`py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent ${
+                        project.link
+                          ? "text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                          : "bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700"
+                      } disabled:opacity-50 disabled:pointer-events-none`}
                     >
-                      View Repo
+                      {project.link ? "View Repo" : "View Repo"}
+                      {!project.link && (
+                        <svg
+                          className="shrink-0 size-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="m9 18 6-6-6-6" />
+                        </svg>
+                      )}
                     </a>
                   )}
                 </div>
@@ -150,13 +171,15 @@ const ProjectsExpanded = () => {
                   <p className="text-lg text-neutral-200">{section.content}</p>
                 </div>
               ))}
-              <ul className="list-disc list-outside space-y-5 ps-5 text-lg text-neutral-200">
-                {project.bullets.map((bullet, index) => (
-                  <li key={index} className="ps-2">
-                    {bullet.quote}
-                  </li>
-                ))}
-              </ul>
+              {project.bullets && (
+                <ul className="list-disc list-outside space-y-5 ps-5 text-lg text-neutral-200">
+                  {project.bullets.map((bullet, index) => (
+                    <li key={index} className="ps-2">
+                      {bullet.line}
+                    </li>
+                  ))}
+                </ul>
+              )}
               <figure>
                 <div className="grid lg:grid-cols-2 gap-3">
                   {project.images.length > 1 && (
