@@ -94,7 +94,7 @@ const Projects = () => {
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Link
-                  to="/projects/vectors-space-speeches"
+                  to="/projects/vector-space-speeches"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
