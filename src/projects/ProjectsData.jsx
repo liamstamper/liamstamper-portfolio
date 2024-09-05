@@ -6,6 +6,18 @@ import DoomImage1 from "../assets/doom-in-ascii/gameplay.png";
 import DoomImage2 from "../assets/doom-in-ascii/menu.png";
 import DoomImage3 from "../assets/doom-in-ascii/map.png";
 
+import OpenPrairieImage1 from "../assets/open-prairie/home.png";
+import OpenPrairieImage2 from "../assets/open-prairie/article.png";
+import OpenPrairieImage3 from "../assets/open-prairie/author.png";
+
+import APODImage1 from "../assets/nasa-apod/apod.png";
+import APODImage2 from "../assets/nasa-apod/iotd.png";
+import APODImage3 from "../assets/nasa-apod/cron.png";
+
+import V2AImage1 from "../assets/video-to-ascii/home.png";
+
+import VectorSpaceImage1 from "../assets/vector-space/speeches.png";
+
 export const projectsData = [
   {
     id: "gr-stocks",
@@ -51,43 +63,22 @@ export const projectsData = [
   {
     id: "video-to-ascii",
     title: "Video to Ascii",
-    link: "https://gr-stocks.vercel.app/",
-    repo: "https://github.com/liamstamper/gr-stocks",
-    tags: ["React", "Google Finance", "API"],
+    repo: "https://github.com/liamstamper/video-to-ascii",
+    tags: ["C++", "OpenCV"],
     date: "September 2024",
-    images: [GRImage1, GRImage2, GRImage3],
-    captions: ["A look at the Home Page", "Login Page for the Application"],
+    images: [V2AImage1],
+    captions: [],
     overview:
-      "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
+      "This project captures video from your webcam and converts each frame into ASCII art, displaying it in the terminal in real-time.",
     sections: [
-      {
-        title: "Features",
-        content:
-          "As we've grown, we've seen how Preline has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.",
-      },
+      {},
       {
         title: "Technologies",
         content:
-          "This project is built using the React library. I used an API from Alpha Vantage to get real-time stock market data. I used Tailwind CSS to style the application and icons from Google Fonts.",
-      },
-      {
-        title: "Achievements",
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "I chose to use C++ for this project to push my comfort level a little. I used OpenCV (which I have some expereince with but this was a new challange) for capturing webcam input and processing video frames.ASCII I wrote my own custom algorithm that maps pixel brightness to ASCII characters for visual representation. The animation is then displayed in the terminal for simplicity.",
       },
     ],
-    bullets: [
-      {
-        line: " allows us to collaborate in real time and is a really great way for leadership on the team to stay up-to-date with what everybody is working on.",
-        author: "Stewarand Design",
-      },
-      {
-        line: "a new way of sharing. It's a persistent way for everyone to see and absorb each other's work.",
-        author: "David ScEventbrite",
-      },
-    ],
-    closingStatement:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    bullets: [],
   },
   {
     id: "doom-in-ascii",
@@ -127,14 +118,13 @@ export const projectsData = [
   {
     id: "nasa-apod-desktop",
     title: "Nasa Apod Desktop",
-    link: "https://gr-stocks.vercel.app/",
-    repo: "https://github.com/liamstamper/gr-stocks",
+    repo: "https://github.com/liamstamper/nasa-apod-desktop",
     tags: ["Python", "API", "Automation"],
-    date: "September 2024",
-    images: [GRImage1, GRImage2, GRImage3],
-    captions: ["Here is some gameplay", "The game menu and map representation"],
+    date: "June 2024",
+    images: [APODImage1, APODImage2, APODImage3],
+    captions: ["My desktop", "Another APOD and a look at cron scheduling"],
     overview:
-      "Nasa Apod Desktop is a Python script to fetch the latest NASA astronomy picture of the day (APOD) and set it as your mac backround. In the readme I included instructions for scheduling the script to run daily with cron.",
+      "Nasa Apod Desktop is a Python script to fetch the latest NASA astronomy picture of the day (APOD) and set it as your mac backround. In the readme I then gave instructions for scheduling the script to run daily with a couple lines of code using cron.",
     sections: [
       {
         title: "Features",
@@ -144,48 +134,40 @@ export const projectsData = [
       {
         title: "Technologies",
         content:
-          "This project is built using the React library. I used an API from Alpha Vantage to get real-time stock market data. I used Tailwind CSS to style the application and icons from Google Fonts.",
-      },
-      {
-        title: "Achievements",
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "This project is built solely using Python, hover I did get expererience using a couple new technologies.",
       },
     ],
     bullets: [
       {
-        line: " allows us to collaborate in real time and is a really great way for leadership on the team to stay up-to-date with what everybody is working on.",
-        author: "Stewarand Design",
+        line: "Cron - This allowed me to schedule the script to run and fetch the new APOD.",
       },
       {
-        line: "a new way of sharing. It's a persistent way for everyone to see and absorb each other's work.",
-        author: "David ScEventbrite",
+        line: "APIs - It was a new experience to work with public APIs in Python. It very motivating to figure it out and get some practice.",
       },
     ],
     closingStatement:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Overall this was a fun small project. I thought this was a cool use of Python and a fun public API from Nasa.",
   },
   {
     id: "vector-space-speeches",
     title: "Vector Space Speech Analysis",
-    link: "https://gr-stocks.vercel.app/",
-    repo: "https://github.com/liamstamper/gr-stocks",
-    tags: ["Python", "Vector Space"],
+    repo: "https://github.com/liamstamper/vector-space-speeches",
+    tags: ["Python", "Text Analysis", "Vector Space"],
     date: "September 2024",
-    images: [GRImage1, GRImage2, GRImage3],
-    captions: ["Here is some gameplay", "The game menu and map representation"],
+    images: [VectorSpaceImage1],
+    captions: ["A look the data"],
     overview:
-      "Gr Stocks is a comprehensive Google Finance clone that provides stock market data, financial news, and in-depth analytics. The application closely mirrors the core functionality of Google Finance, offering a streamlined and user-friendly interface that simplifies the process of tracking stock performance. ",
+      'In this project I implemented text normilization and vector space analysis on a dataset of presidential speeches to predict who four "mystery speeches" belonged to. ',
     sections: [
       {
         title: "Features",
         content:
-          "As we've grown, we've seen how Preline has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.",
+          "This project uses efficent text preprocessing and normilization techniques. Then I used term frequency inverse document frequency (TF-IDF) to find the most important words in the dataset. Finally using cosine similarity I identified the closed match to tthe unkown speeches.",
       },
       {
         title: "Technologies",
         content:
-          "This project is built using the React library. I used an API from Alpha Vantage to get real-time stock market data. I used Tailwind CSS to style the application and icons from Google Fonts.",
+          "This project uses well structured Python classes and functions.",
       },
       {
         title: "Achievements",
@@ -213,38 +195,19 @@ export const projectsData = [
     repo: "https://github.com/liamstamper/gr-stocks",
     tags: ["React", "Tailwind"],
     date: "September 2024",
-    images: [GRImage1, GRImage2, GRImage3],
-    captions: ["Here is some gameplay", "The game menu and map representation"],
+    images: [OpenPrairieImage1, OpenPrairieImage2, OpenPrairieImage3],
+    captions: [
+      "The magazine's homepage",
+      "A look at an article and an author description",
+    ],
     overview:
-      "Open Prairie Magazine is a a litterary magazine built in React. It is styled with Tailwind and data ",
+      "Open Prairie Magazine is a a litterary magazine built in React styled with Tailwind.",
     sections: [
       {
         title: "Features",
         content:
-          "As we've grown, we've seen how Preline has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.",
-      },
-      {
-        title: "Technologies",
-        content:
-          "This project is built using the React library. I used an API from Alpha Vantage to get real-time stock market data. I used Tailwind CSS to style the application and icons from Google Fonts.",
-      },
-      {
-        title: "Achievements",
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "The site enphasizes reusability in its design. It features multiple article and article card conpomponents. It has sections organized by type of writing and intuitive homepage navigation. This project was great expereince in using React functionally. It also help me get more comfortable styling in Tailwind and building more advanced componenets.",
       },
     ],
-    bullets: [
-      {
-        line: " allows us to collaborate in real time and is a really great way for leadership on the team to stay up-to-date with what everybody is working on.",
-        author: "Stewarand Design",
-      },
-      {
-        line: "a new way of sharing. It's a persistent way for everyone to see and absorb each other's work.",
-        author: "David ScEventbrite",
-      },
-    ],
-    closingStatement:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
 ];
