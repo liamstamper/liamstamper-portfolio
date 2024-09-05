@@ -163,8 +163,8 @@ export const projectsData = [
   {
     id: "open-prairie-magazine",
     title: "Open Prarie Magazine",
-    link: "https://gr-stocks.vercel.app/",
-    repo: "https://github.com/liamstamper/gr-stocks",
+    link: "https://open-prairie-magazine.vercel.app/",
+    repo: "https://github.com/liamstamper/openprarie-magazine",
     tags: ["React", "Tailwind"],
     date: "September 2024",
     images: [OpenPrairieImage1, OpenPrairieImage2, OpenPrairieImage3],
