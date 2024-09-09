@@ -42,7 +42,7 @@ const Projects = () => {
             <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Video To Ascii</h2>
-                <p className="text-sm">Webcam to ASCII built in C++</p>
+                <p className="text-sm">Webcam to ASCII in C++</p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Link
@@ -136,8 +136,8 @@ const Projects = () => {
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Nasa Apod Desktop</h2>
                 <p className="text-sm">
-                  Python to set NASA's Astronomy Picture of the Day (APOD) as
-                  your wallpaper
+                  Python to set NASA's Astronomy Picture of the Day as your
+                  wallpaper
                 </p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
