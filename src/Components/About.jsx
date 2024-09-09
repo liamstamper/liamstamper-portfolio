@@ -6,7 +6,7 @@ const aboutMe = [
   {
     title: "Background",
     description:
-      "I am a passionate software developer with a experience in web development and machine learing. This year I've worked as a research assistant at the University of Iowa doing medical image processing in Python. In 2023, I worked as lead developer for a startup called SeatStock. I built frontend components in React using Tailwind and worked on integrating the platform with a custom-built backend API to handle real-time ticket inventory management and secure payment processing.",
+      "Iowa City based software developer with experience in web development and machine learning. This year I've worked as a research assistant at the University of Iowa doing medical image processing in Python. In 2023 I was lead developer for a startup called SeatStock. There I built frontend components in React with Tailwind and worked on integrating the backend to handle ticket inventory management and payment processing.",
     size: "col-span-2 row-span-1", // Wide card
   },
   {
