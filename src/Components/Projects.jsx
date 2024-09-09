@@ -21,7 +21,7 @@ const Projects = () => {
               src={GrStocksThumbnail}
               alt="Gr Stocks Image"
             />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
+            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Gr Stocks</h2>
                 <p className="text-sm">A Google Finance clone in React. </p>
@@ -42,7 +42,7 @@ const Projects = () => {
               src={VideoToAsciiThumbnail}
               alt="VideoToAscii Image"
             />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
+            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Video To Ascii</h2>
                 <p className="text-sm">Webcam to ASCII in C++</p>
@@ -63,17 +63,17 @@ const Projects = () => {
           <div className="relative group h-[350px]">
             <img
               className="w-full h-full object-cover rounded-lg"
-              src={DoomAsciiThumbnail}
-              alt="Gallery Masonry Image"
+              src={OpenPrairieThumbnail}
+              alt="Open Pairie Magazine Image"
             />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
+            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
-                <h2 className="text-lg font-bold">Doom In Ascii</h2>
-                <p className="text-sm">Doom build using ASCII in Python.</p>
+                <h2 className="text-lg font-bold">Open Prairie Magazine</h2>
+                <p className="text-sm">React tailwind magazine build.</p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Link
-                  to="/projects/doom-in-ascii"
+                  to="/projects/open-prairie-magazine"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
@@ -87,7 +87,7 @@ const Projects = () => {
               src={VectorSpaceThumbnail}
               alt="Gallery Masonry Image"
             />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
+            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Vectors Space Speeches</h2>
                 <p className="text-sm">
@@ -111,17 +111,17 @@ const Projects = () => {
           <div className="relative group h-[350px]">
             <img
               className="w-full h-full object-cover rounded-lg"
-              src={OpenPrairieThumbnail}
-              alt="Open Pairie Magazine Image"
+              src={DoomAsciiThumbnail}
+              alt="Gallery Masonry Image"
             />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
+            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
-                <h2 className="text-lg font-bold">Open Prairie Magazine</h2>
-                <p className="text-sm">React tailwind magazine build.</p>
+                <h2 className="text-lg font-bold">Doom In Ascii</h2>
+                <p className="text-sm">Doom build using ASCII in Python.</p>
               </div>
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Link
-                  to="/projects/open-prairie-magazine"
+                  to="/projects/doom-in-ascii"
                   className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
                 >
                   Learn more &rarr;
@@ -135,7 +135,7 @@ const Projects = () => {
               src={APODThumbnail}
               alt="Gallery Masonry Image"
             />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-50 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
+            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
               <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
                 <h2 className="text-lg font-bold">Nasa Apod Desktop</h2>
                 <p className="text-sm">
