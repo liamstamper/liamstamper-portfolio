@@ -154,7 +154,7 @@ const ProjectsExpanded = () => {
                 <figure>
                   <img
                     src={project.images[0]}
-                    className="w-full h-172 bg-gray-300 rounded-xl object-cover"
+                    className="w-full h-172 bg-gray-300 border border-gray-700 rounded-xl object-cover"
                     alt="Project screenshot"
                   />
                   <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
