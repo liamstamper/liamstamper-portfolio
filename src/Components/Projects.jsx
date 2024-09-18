@@ -1,19 +1,14 @@
-import GrStocksThumbnail from "../assets/thumbnails/gr-stocks.png";
-import VideoToAsciiThumbnail from "../assets/thumbnails/videotoascii.png";
-import OpenPrairieThumbnail from "../assets/thumbnails/openprairie.png";
-import APODThumbnail from "../assets/thumbnails/nasaapod.png";
-import VectorSpaceThumbnail from "../assets/thumbnails/vectorspace.png";
-import DoomAsciiThumbnail from "../assets/thumbnails/doomascii.png";
-import CradleCode from "../assets/thumbnails/cradlecode.png";
-
 import ProjectCard from "./ProjectCard";
 import { Link } from "react-router-dom";
 
+import GrStocksThumbnail from "../assets/thumbnails/gr-stocks.png";
+import OpenPrairieThumbnail from "../assets/thumbnails/openprairie.png";
+import CradleCode from "../assets/thumbnails/cradlecode.png";
 const Projects = () => {
   return (
     <div
       id="projects"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 "
     >
       <h1 className="text-4xl font-bold text-white mb-8">My Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
