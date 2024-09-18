@@ -12,8 +12,8 @@ import ProjectCard from "./ProjectCard";
 
 const MoreProjects = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [id]);
+    window.scrollTo(0, 0), [];
+  });
   return (
     <div className="relative min-h-screen bg-black overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
