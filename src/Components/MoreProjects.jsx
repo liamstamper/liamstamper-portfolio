@@ -1,3 +1,7 @@
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 import GrStocksThumbnail from "../assets/thumbnails/gr-stocks.png";
 import VideoToAsciiThumbnail from "../assets/thumbnails/videotoascii.png";
 import OpenPrairieThumbnail from "../assets/thumbnails/openprairie.png";
@@ -5,10 +9,11 @@ import APODThumbnail from "../assets/thumbnails/nasaapod.png";
 import VectorSpaceThumbnail from "../assets/thumbnails/vectorspace.png";
 import DoomAsciiThumbnail from "../assets/thumbnails/doomascii.png";
 import ProjectCard from "./ProjectCard";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 
 const MoreProjects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
   return (
     <div className="relative min-h-screen bg-black overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
