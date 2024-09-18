@@ -3,7 +3,6 @@ import Header from "./Header";
 import Projects from "./Components/Projects";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
-import OpenSource from "./Components/OpenSouce";
 
 const HomePage = () => {
   return (
@@ -12,7 +11,6 @@ const HomePage = () => {
       <Hero />
       <About />
       <Projects />
-      <OpenSource />
     </div>
   );
 };
