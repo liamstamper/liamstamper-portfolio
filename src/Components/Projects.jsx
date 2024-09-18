@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
 import GrStocksThumbnail from "../assets/thumbnails/gr-stocks.png";
 import VideoToAsciiThumbnail from "../assets/thumbnails/videotoascii.png";
 import OpenPrairieThumbnail from "../assets/thumbnails/openprairie.png";
 import APODThumbnail from "../assets/thumbnails/nasaapod.png";
 import VectorSpaceThumbnail from "../assets/thumbnails/vectorspace.png";
 import DoomAsciiThumbnail from "../assets/thumbnails/doomascii.png";
+import CradleCode from "../assets/thumbnails/cradlecode.png";
+
+import ProjectCard from "./ProjectCard";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -14,147 +17,33 @@ const Projects = () => {
     >
       <h1 className="text-4xl font-bold text-white mb-8">My Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="space-y-4">
-          <div className="relative group h-[350px]">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              src={GrStocksThumbnail}
-              alt="Gr Stocks Image"
-            />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
-              <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
-                <h2 className="text-lg font-bold">Gr Stocks</h2>
-                <p className="text-sm">A Google Finance clone in React. </p>
-              </div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Link
-                  to="projects/gr-stocks"
-                  className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
-                >
-                  Learn more &rarr;
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="relative group h-[350px]">
-            <img
-              className="w-full h-full opacity-40 object-cover rounded-lg"
-              src={VideoToAsciiThumbnail}
-              alt="VideoToAscii Image"
-            />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
-              <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
-                <h2 className="text-lg font-bold">Video To Ascii</h2>
-                <p className="text-sm">Webcam to ASCII in C++</p>
-              </div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Link
-                  to="/projects/video-to-ascii"
-                  className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
-                >
-                  Learn more &rarr;
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          thumbnail={GrStocksThumbnail}
+          title="Gr Stocks"
+          description="A Google Finance clone in React and Tailwind. Uses firebase for authentication."
+          link="projects/gr-stocks"
+        />
 
-        <div className="space-y-4">
-          <div className="relative group h-[350px]">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              src={OpenPrairieThumbnail}
-              alt="Open Pairie Magazine Image"
-            />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
-              <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
-                <h2 className="text-lg font-bold">Open Prairie Magazine</h2>
-                <p className="text-sm">React tailwind magazine build.</p>
-              </div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Link
-                  to="/projects/open-prairie-magazine"
-                  className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
-                >
-                  Learn more &rarr;
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="relative group h-[350px]">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              src={VectorSpaceThumbnail}
-              alt="Gallery Masonry Image"
-            />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
-              <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
-                <h2 className="text-lg font-bold">Vectors Space Speeches</h2>
-                <p className="text-sm">
-                  Presidential speech similarity analysis with vector space in
-                  Python
-                </p>
-              </div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Link
-                  to="/projects/vector-space-speeches"
-                  className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
-                >
-                  Learn more &rarr;
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          thumbnail={OpenPrairieThumbnail}
+          title="Open Prairie Magazine"
+          description="React tailwind magazine build."
+          link="/projects/open-prairie-magazine"
+        />
 
-        <div className="space-y-4">
-          <div className="relative group h-[350px]">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              src={DoomAsciiThumbnail}
-              alt="Gallery Masonry Image"
-            />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
-              <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
-                <h2 className="text-lg font-bold">Doom In Ascii</h2>
-                <p className="text-sm">Doom build using ASCII in Python.</p>
-              </div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Link
-                  to="/projects/doom-in-ascii"
-                  className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
-                >
-                  Learn more &rarr;
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="relative group h-[350px]">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              src={APODThumbnail}
-              alt="Gallery Masonry Image"
-            />
-            <div className="absolute inset-0 bg-slate-900 bg-opacity-40 opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
-              <div className="text-white text-left transition-transform duration-300 group-hover:translate-y-[-10px]">
-                <h2 className="text-lg font-bold">Nasa Apod Desktop</h2>
-                <p className="text-sm">
-                  Python to set NASA's Astronomy Picture of the Day as your
-                  wallpaper
-                </p>
-              </div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Link
-                  to="/projects/nasa-apod-desktop"
-                  className="inline-flex items-center text-sm text-white px-3 py-1.5 border border-transparent rounded-lg transition-all duration-300 hover:border-white group-hover:bg-opacity-25"
-                >
-                  Learn more &rarr;
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          thumbnail={CradleCode}
+          title="Cradle Code"
+          description="Learn to code application build in react. Uses firebase authentication and database."
+          link="/projects/cradle-code"
+        />
       </div>
+      <Link
+        to="/moreprojects"
+        className="text-white text-sm mt-8 flex underline justify-center"
+      >
+        View more &rarr;
+      </Link>
     </div>
   );
 };
