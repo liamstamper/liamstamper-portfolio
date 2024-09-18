@@ -18,7 +18,30 @@ import V2AImage1 from "../assets/video-to-ascii/home.png";
 
 import VectorSpaceImage1 from "../assets/vector-space/speeches.png";
 
+import CradleCodeImage1 from "../assets/cradle-code/home.png";
+import CradleCodeImage2 from "../assets/cradle-code/signin.png";
+import CradleCodeImage3 from "../assets/cradle-code/register.png";
+
 export const projectsData = [
+  {
+    id: "cradle-code",
+    title: "Cradle Code",
+    link: "https://cradlecode.vercel.app/",
+    repo: "https://github.com/liamstamper/cradlecode",
+    tags: ["React", "Tailwind", "Firebase"],
+    date: "September 2024",
+    images: [CradleCodeImage1],
+    captions: ["The sites homepage"],
+    overview:
+      "Cradle Code is a learn to code site built in React styled with Tailwind. (In-Progress)",
+    sections: [
+      {
+        title: "Features",
+        content:
+          "This project features a sleek interface for users to go through easy to follow tutorials, try practice problems and track their progress. It uses firebase for authentication and database.",
+      },
+    ],
+  },
   {
     id: "gr-stocks",
     title: "Gr Stocks",
