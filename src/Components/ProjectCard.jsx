@@ -4,11 +4,13 @@ const ProjectCard = ({ thumbnail, title, description, link }) => {
   return (
     <div className="bg-gray-900 border border-gray-700 rounded-lg overflow-hidden p-6 flex flex-col justify-between h-full">
       <div>
-        <img
-          className="w-full h-64 object-cover rounded-lg"
-          src={thumbnail}
-          alt={`${title} Thumbnail`}
-        />
+        <Link to={link}>
+          <img
+            className="w-full h-64 object-cover rounded-lg"
+            src={thumbnail}
+            alt={`${title} Thumbnail`}
+          />
+        </Link>
         <div className="pt-4">
           <h2 className="font-bold text-white text-xl mb-1">{title}</h2>
           <p className="text-gray-400 text-sm mb-4">{description}</p>
