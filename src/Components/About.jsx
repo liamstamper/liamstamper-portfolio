@@ -6,7 +6,7 @@ const aboutMe = [
   {
     title: "Background",
     description:
-      "Iowa City based software developer with experience in web development and machine learning. This year I've worked as a research assistant at the University of Iowa doing medical image processing in Python. In 2023 I was lead developer for a startup called SeatStock. There I built frontend components in React with Tailwind and worked on integrating the backend to handle ticket inventory management and payment processing.",
+      "Iowa City based Full-Stack SWE with internship and startup expereince. Currently a research assistant at the University of Iowa working on medical image processing in Python. In 2023, I was the lead developer and co-founder at SeatStock, where I built React/Tailwind frontend components and integrated backend systems for ticket inventory and payment processing.",
     size: "col-span-2 row-span-1", // Wide card
   },
   {
@@ -24,7 +24,7 @@ const aboutMe = [
   {
     title: "Interests",
     description:
-      "I am very excited about contributing to open source projects and learning new technologies. I am currently learning Typescript and Haskell.",
+      "I am very excited about contributing to open-source projects and learning new technologies. I am currently learning Haskell and C.",
     size: "col-span-1 row-span-1", // Regular card
   },
   {
@@ -34,7 +34,7 @@ const aboutMe = [
         institution: "The University of Iowa - Bachelor's in Computer Science",
         date: "August 2021 - December 2024",
         description:
-          "Minor in Mathematics. Event Planner for the Association for Computing Machinery (ACM), IowaHackathon 2023 Award Winner. ",
+          "Minor in Mathematics. Event Chair for ACM, IowaHackathon 2023 Award Winner. ",
       },
     ],
     size: "col-span-2 row-span-1", // Wide card
@@ -53,7 +53,7 @@ const About = () => {
           >
             <h2 className="text-2xl font-bold">{section.title}</h2>
             {section.description && (
-              <p className="mt-2 text-gray-400">{section.description}</p>
+              <p className="mt-2 text-white">{section.description}</p>
             )}
             {section.icons && (
               <div className="mt-4 flex flex-wrap gap-4">
@@ -71,11 +71,9 @@ const About = () => {
                   <div key={idx}>
                     <h3 className="">
                       {edu.institution}{" "}
-                      <span className="text-gray-400 text-sm">
-                        ({edu.date})
-                      </span>
+                      <span className="text-white text-sm">({edu.date})</span>
                     </h3>
-                    <p className="text-gray-400">{edu.description}</p>
+                    <p className="text-white">{edu.description}</p>
                   </div>
                 ))}
               </div>
