@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFolder } from "@fortawesome/free-solid-svg-icons";
+
 import Resume from "../assets/Liam-Stamper.pdf";
 
 const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-40">
-      <h1 class="block font-bold text-gray-200 text-4xl md:text-5xl lg:text-8xl">
+      <h1 class="block font-bold text-white text-4xl md:text-5xl lg:text-8xl">
         Liam Stamper
       </h1>
       <div class="mt-5 max-w-3xl">
-        <p class="text-lg text-gray-600 dark:text-neutral-400">
+        <p class="text-lg text-center text-white">
           Computer Science student at The University of Iowa. 2024 Undergraduate
           Research Assistant. JavaScript Developer in 2023 and Web Development
           Intern during Summer 2022.
@@ -48,7 +50,7 @@ const Hero = () => {
             state: { fromRecentProjects: true },
           }}
         >
-          🗂️ Recent Work
+          <FontAwesomeIcon icon={faFolder} size="xl" /> Recent Work
         </Link>
       </div>
 
